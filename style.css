@@ -14,11 +14,13 @@
   .topnav a {
     float: right;
     display: block;
-    color: rgb(68, 231, 182);
-    text-align: left;
+    color: #008037;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family: Poppins;
+    font-weight: bold;
+    text-transform: uppercase;
   }
   
   
@@ -28,11 +30,10 @@
     
    
   }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
-    display: none;
+  .topnav .login-container {
+    float: right;
   }
+   
 #header-background{
     height:800px; 
     background:url(images/landingpage.jpg);
@@ -40,4 +41,9 @@
     background-size: 100% 100%;
     
   }
- 
+  .logo img {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 350px;
+  }
