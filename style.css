@@ -15,12 +15,17 @@
     float: right;
     display: block;
     color: #008037;
-    padding: 14px 16px;
+    padding: 60px 40px;
     text-decoration: none;
     font-size: 17px;
     font-family: Poppins;
     font-weight: bold;
     text-transform: uppercase;
+  }
+  .topnav a:hover{
+    
+    color: white;
+   
   }
   
   
@@ -30,9 +35,7 @@
     
    
   }
-  .topnav .login-container {
-    float: right;
-  }
+ 
    
 #header-background{
     height:800px; 
@@ -42,8 +45,52 @@
     
   }
   .logo img {
+
     position: absolute;
-    margin-top: 5px;
+    margin-top: 18px;
     margin-left: 10px;
-    height: 350px;
+    height: 120px;
   }
+  .button{
+   float: right;
+   background-color:#008037;
+   padding: 10px 24px;
+   font-size: 18px;
+   border-radius: 24px;
+   font-family: Poppins;
+   font-weight: bold;
+   color: white;
+   margin-top: 48px;
+   margin-right: 50px;
+   text-align: center;
+   border: none;
+}
+  
+  .button2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color:#008037;
+    padding: 16px 30px;
+    font-size: 18px;
+    border-radius: 28px;
+    font-family: Poppins;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+.button2:hover{
+  background-color: white;
+  color: #008037;
+}
+
+.button:hover{
+  background-color: white;
+  color: #008037;
+}
+     
+   
