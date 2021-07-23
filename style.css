@@ -1,16 +1,17 @@
-/*Landing page*/
-/* Add a black background color to the top navigation */
+
+.header-container{
+  height:800px; 
+  background:url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+}
 .topnav {
     overflow: hidden;
-   
-    
   }
   
  
- body{
-  max: width 100%;;
-  margin: auto;
- } /* Style the links inside the navigation bar */
+ /* Style the links inside the navigation bar */
   .topnav a {
     float: right;
     display: block;
@@ -37,13 +38,7 @@
   }
  
    
-#header-background{
-    height:800px; 
-    background:url(images/landingpage.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    
-  }
+
   .logo img {
 
     position: absolute;
@@ -65,8 +60,17 @@
    text-align: center;
    border: none;
 }
+.button:hover{
+  background-color: white;
+  color: #008037;
+}
+
+body{
+  max: width 100%;;
+  margin: auto;
+ } 
   
-  .button2{
+.button2{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -87,10 +91,15 @@
   background-color: white;
   color: #008037;
 }
-
-.button:hover{
-  background-color: white;
-  color: #008037;
+h2{
+ color: #62B1F6;
+ font-family: Poppins;
+ font-weight: bold;
+ 
 }
-     
+p{
+  color: #4DBD33;
+  font-family: Poppins;
+  font-weight: bold;
+}   
    
