@@ -1,4 +1,6 @@
-
+body{
+  margin: 0;
+}
 .header{
   height: 800px; 
   background:url(images/background.jpg);
@@ -8,26 +10,24 @@
    
   
 }
-.topnav {
-    overflow: hidden;
-    
-  }
   
  
  /* Style the links inside the navigation bar */
-  .topnav a {
+  .header a {
     float: right;
     text-align: center;
     display: block;
     color: #008037;
-    padding: 60px 16px;
+    padding: 16px 12px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     font-family: Poppins;
     font-weight: bold;
     text-transform: uppercase;
+    
+     
   }
-  .topnav a:hover{
+  .header a:hover{
     
     color: white;
    
@@ -35,33 +35,36 @@
   
   
   /* Add an active class to highlight the current page */
-  .topnav a.active {
+  .header a.active {
     color: white;
   }
-  .topnav .icon {
-    display: none;
+  .header-right {
+    overflow: hidden;
+    
   }
- 
    
-
-  .logo img {
-
-    position: absolute;
-    margin-top: 18px;
-    margin-left: 10px;
-    height: 120px;
-    padding: auto;
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
   }
+  
   .button{
    float: right;
    background-color:#008037;
    padding: 10px 24px;
-   font-size: 18px;
+   font-size: 20px;
    border-radius: 24px;
    font-family: Poppins;
    font-weight: bold;
    color: white;
-   margin-top: 48px;
+   margin-top: 5px;
    margin-right: 50px;
    text-align: center;
    border: none;
@@ -79,7 +82,7 @@ body{
   
 .button2{
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -131,6 +134,8 @@ border-radius: 10px;
   color: #4DBD33;
   float: right;
 }
- 
+.contact{
+  background-color: #62B1F6;
+}
 
    
