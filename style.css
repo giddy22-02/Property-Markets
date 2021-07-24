@@ -181,11 +181,15 @@ input[type=submit]:hover {
 
 /* Style the container/contact section */
 .contact-row{
-  background-color: #ca931b;
+  background-color:  #65d165;
 }
 .address-row{
-  background-color: #62B1F6;
+  background-color: #4DBD33
 }
+.otherlinks-row{
+  background-color: #008037;
+}
+
 
 /* Create two columns that float next to eachother */
 .column {
@@ -213,19 +217,13 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
-* {
-  box-sizing: border-box;
-}
-
-.address-container{
-
-  
-}
-.address-column1{
-
-font-size: 17px;
  
-width: 100%;
-box-sizing: border-box;
+
+.address-column1 p{
+  color: white;
+}
+.address-column2 iframe{
+  height: 100%;
+  margin: 0 0 0 0px;
 }
    
