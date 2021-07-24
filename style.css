@@ -113,6 +113,7 @@ p{
   font-weight: bold;
   text-align: left;
 }
+
 .about img{
 float: right;
 border-radius: 10px;
@@ -125,17 +126,106 @@ border-radius: 10px;
    
   font-size: 20px;
 }
-.features img{
+.features{
   float: left;
   border-radius: 10px;
 
-}  
-.features-list ul{
-  color: #4DBD33;
-  float: right;
 }
-.contact{
+.about-column1 ul{
+  color: #4DBD33;
+  font-weight: bold;
+  font-family: poppins;
+  
+}
+.about-column2 img{
+  border-radius: 20px;
+}  
+.features-column1 img{
+  border-radius: 20px;
+}
+.features-column2 ul{
+  color: #4DBD33;
+  font-weight: bold;
+  font-family: poppins;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #62B1F6;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 10px;
+  float: right;
+  cursor: pointer;
+  border: none;
+}
+
+input[type=submit]:hover {
+  background-color: #f1fcf2;
+  color: #4DBD33;
+}
+
+/* Style the container/contact section */
+.contact-row{
+  background-color: #ca931b;
+}
+.address-row{
   background-color: #62B1F6;
 }
 
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contact-column2 img{
+  border-radius: 15px;
+
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.address-container{
+
+  
+}
+.address-column1{
+
+font-size: 17px;
+ 
+width: 100%;
+box-sizing: border-box;
+}
    
