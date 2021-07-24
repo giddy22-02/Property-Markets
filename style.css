@@ -1,6 +1,6 @@
 
 .header-container{
-  height:800px; 
+  height: 800px; 
   background:url(images/background.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -16,7 +16,7 @@
     float: right;
     display: block;
     color: #008037;
-    padding: 60px 40px;
+    padding: 60px 16px;
     text-decoration: none;
     font-size: 17px;
     font-family: Poppins;
@@ -45,6 +45,7 @@
     margin-top: 18px;
     margin-left: 10px;
     height: 120px;
+    padding: auto;
   }
   .button{
    float: right;
@@ -66,8 +67,9 @@
 }
 
 body{
-  max: width 100%;;
-  margin: auto;
+   width:auto;
+   
+   
  } 
   
 .button2{
@@ -101,5 +103,29 @@ p{
   color: #4DBD33;
   font-family: Poppins;
   font-weight: bold;
-}   
+  text-align: left;
+}
+.about img{
+float: right;
+border-radius: 10px;
+ 
+} 
+.about ul{
+  color: #4DBD33;
+  padding: auto;
+
+   
+  font-size: 20px;
+}
+.features img{
+  float: left;
+  border-radius: 10px;
+
+}  
+.features-list ul{
+  color: #4DBD33;
+  float: right;
+}
+
+
    
