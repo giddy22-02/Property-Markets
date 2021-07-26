@@ -78,18 +78,12 @@
         </ul>
       </div>
        </div>
-        
-      
     </div>
   </div>
 </div>
 
-<div class="footer-container">
-  <div class="footer">
+ <!--Contact form-->
     <div class="contact-container">
-      <div style="text-align:left">
-        
-      </div>
       <div class="contact-row">
         <div class="row">
           <h2>Contact Us</h2>
@@ -97,81 +91,77 @@
           <div class="column">
             
             <form action="/action_page.php">
-              <label for="fullname">First Name</label>
-              <input type="text" id="fullname" name="firstname" placeholder="Your name..">
-              <label for="Phone">Phone Number</label>
-              <input type="tel" id="Phone" name="lastname" placeholder="Phone Number">
-              <label for="country">Country</label>
-              <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-              </select>
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-            <input type="submit" value="Submit">
+              <label for="fullname"></label>
+              <input type="text" id="fullname" name="fullname" placeholder="Full Name" >
+              <label for="Phone"></label>
+              <input type="tel" id="Phone" name="Phone Number" placeholder="Phone Number">
+              <label for="Subject"></label>
+              <input type="text" id="subject" name="subject" placeholder="Subject">
+              <label for="email"></label>
+              <input type="email" id="email" name="Email" placeholder="Email Address">
+          <br>
+            <input type="submit" value="Submit" id="submit">
            </form>
         </div>
         <div class="column">
           <div class="contact-column2">
-            <img src="./images/contact us.jpg" width="350" height="450">
+            <img src="./images/contact us.jpg" width="300" height="250">
           </div>
         </div>
-        </div>
-        
-        <div class="address-row">
-          <div class="row">
-            <div class="column">
-              <div class="address-column1">
-                <p>CBD.Nairobi Kenya</p> <br>
-                <p><u>infopropertymarkets.co.ke</u></p><br>
-                <p>+254700 11 22 33/ +254 778 33 22 11</p>
-              </div>
-            </div>
-            <div class="column">
-              <div class="address-column2">
-                <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.628049295524!2d36.819213273566554!3d-1.2855855462493322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d714b90b4d%3A0xf58d8f9b297c294c!2sCentral%20Business%20District%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1627135229918!5m2!1sen!2ske" 
-                width="100%" 
-                height="150" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-              </iframe>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <div class="otherlinks-row">
-          <div class="row">
-            <div class="column">
-              <div class="address-column1">
-                 Logo
-              </div>
-            </div>
-            <div class="column">
-              <div class="address-column2">
-                 Added links
-              </div>
-            </div>
-            <div class="column">
-              <div class="address-column1">
-                 Logo
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        
-      </div>
+      </div> 
+   </div>
+      
     </div>
+
+     <!--physical address, Map-->
+     <div class="row">
       
+        <div class="address-column left" 
+        style="background-color: #4DBD33; color: white; font-family: Poppins; font-weight: bold; font-size: 18;" >
+          <h4>CBD.Nairobi Kenya</h4> <br>
+          <h4><u>infopropertymarkets.co.ke</u></h4><br>
+          <h4>+254700 11 22 33/ +254 778 33 22 11</h4>
+        </div>
+        <div class="address-column right">
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.628049295524!2d36.819213273566554!3d-1.2855855462493322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d714b90b4d%3A0xf58d8f9b297c294c!2sCentral%20Business%20District%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1627135229918!5m2!1sen!2ske" 
+          width="100%" 
+          height="290"
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+        </div>
       
-      
-   
-  </div>
+     
+    </div>
+  <!--Other links-->
+  <div class="footer"> 
+    <div class="row">
+        <div class="footer-column"> 
+            <img src="./images/property market logo cropped.png" width="250" height="80">
+        </div>
+        <div class="footer-column">
+            <h4>ADDED LINKS</h4>
+            <p>Services</p>
+            <p>Market</p>
+        </div>
+        <div class="footer-column">
+          <div class="footer-newsletter">
+            <h5>Subscribe to our weekly Newsletter</h5>
+            <div>
+                <input type="email" placeholder="Email Address" id="footer-email"> 
+            </div>
+          </div>
+            
+        </div>
+      </div>
+      <div class="copyright">
+        <h5>2020 Copyright by Property Markets</h5>
+   </div>
 </div>
+
+
 
 
 </body>

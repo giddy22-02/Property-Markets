@@ -45,7 +45,7 @@
     
   }
    
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .header a {
       float: none;
       display: block;
@@ -115,7 +115,7 @@ p{
 }
 
 .main-container{
-  background-color: rgb(230, 228, 228);
+  background-color: rgb(224, 221, 221);
    
 }
 .about-column1 ul{
@@ -148,7 +148,7 @@ p{
 /* Style inputs */
 input[type=text], select, textarea {
   width: 100%;
-  padding: 12px;
+  padding: 20px;
   border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
@@ -160,9 +160,11 @@ input[type=submit] {
   color: white;
   padding: 10px 24px;
   border-radius: 10px;
-  float: right;
-  cursor: pointer;
+  float: left;
   border: none;
+ 
+
+  
 }
 
 input[type=submit]:hover {
@@ -205,17 +207,111 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
- 
-.address-row{
-  background-color: #4DBD33;
+#fullname{
+  width: 295px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  padding: 15px;
 }
-.address-column1 p{
+#Phone{
+  width: 295px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  padding: 15px;
+}
+#subject{
+  width: 600px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  padding: 15px;
+}
+#email{
+  width: 600px;
+  height: 115px;
+  border-radius: 20px;
+  border: none;
+  padding: 15px;
+}
+#submit{
+float: right;
+padding-top: 15px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Create two unequal columns that floats next to each other */
+.address-column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer{
+  background-color:#008037;
+  height: 250px;
   color: white;
+  font-family: Poppins;
+  padding: 15px;
 }
-.address-column2 iframe{
-  height: 100%;
-  margin: 0 0 0 0px;
+.footer-column p{
+  color: white;
+  padding-top: 2px;
 }
-.otherlinks-row{
-  background-color: #008037 ;
+
+.footer-column {
+  float: left;
+  width: 33.33%;
+}
+.footer-newsletter {
+  float: right;
+  padding-right: 50px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#footer-email{
+    height: 40px;
+    width: 250px;
+    border-radius: 6px;
+    border: none;
+}
+::placeholder{
+  font-weight: bold;
+  color: #008037;
+ 
+}
+.copyright{
+    text-align: center;
+    font-weight: bold;
+    font-family: Poppins;
+    padding-top: 10px;
+}
+@media screen and (max-width: 600px) {
+  .footer-column {
+    width: 100%;
+  }
 }
