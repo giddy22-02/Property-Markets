@@ -21,14 +21,16 @@
     float: left;
     text-align: center;
     color: #4DBD33;;
-    padding:12px;
+    padding:16px;
     text-decoration: none;
     font-size: 18px;
     font-family: Poppins;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 25px;
-    border-radius: 4px; 
+    margin-top: 20px;
+ 
+    
   }
    /* Style the hover links inside the navigation bar */
   .header a:hover{
@@ -65,10 +67,10 @@
    font-family: Poppins;
    font-weight: bold;
    color: white;
-   margin-top: 5px;
    margin-right: 50px;
    text-align: center;
    border: none;
+   
 }
 .button:hover{
   background-color: white;
