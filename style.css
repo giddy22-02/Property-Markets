@@ -103,13 +103,13 @@ body{
   background-color: white;
   color: #008037;
 }
-h2{
+.About h2{
  color: #62B1F6;
  font-family: Poppins;
  font-weight: bold;
  
 }
-p{
+ .About p{
   color: #4DBD33;
   font-family: Poppins;
   font-weight: bold;
@@ -120,7 +120,7 @@ p{
   background-color: rgb(201, 199, 199);
    
 }
-.about-column1 ul{
+.About ul{
   color: #4DBD33;
   font-weight: bold;
   font-family: poppins;
@@ -128,26 +128,33 @@ p{
 }
 .about-column2 img{
   border-radius: 20px;
-}  
-.features-column1 img{
+} 
+
+.Features img{
   border-radius: 20px;
 }
-.features-column2 ul{
+.Features ul{
   color: #4DBD33;
   font-weight: bold;
   font-family: poppins;
   
 }
+.Features h2{
+  color: #62B1F6;
+  font-family: Poppins;
+  font-weight: bold;
+  
+ }
 
 * {
   box-sizing: border-box;
 }
-*{
-  padding: 0px;
-  margin: 0px;
-}
 
-/* Style inputs */
+
+/*Contact*/
+.contact-row{
+  background-color:  #a7d4a7;
+}
 input[type=text], select, textarea {
   width: 100%;
   padding: 20px;
@@ -156,35 +163,24 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-
 input[type=submit] {
   background-color: #62B1F6;
   color: white;
   padding: 10px 24px;
   border-radius: 10px;
-  float: left;
   border: none;
- 
-
-  
 }
-
 input[type=submit]:hover {
   background-color: #f1fcf2;
   color: #4DBD33;
 }
 
-/* Style the container/contact section */
-.contact-row{
-  background-color:  #a7d4a7;
-}
 .contact-row p{
   color:   #008037;
 }
- 
-
-
-
+.contact-row h2{
+  color:   #62B1F6;
+}
 /* Create two columns that float next to eachother */
 .column {
   float: left;
@@ -193,45 +189,27 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.contact-column2 img{
+.contact-row img{
   border-radius: 15px;
 }
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-#fullname{
-  width: 295px;
+
+#fullname,#Phone{
+  width: auto;
   height: 40px;
   border-radius: 20px;
   border: none;
   padding: 15px;
 }
-#Phone{
-  width: 295px;
-  height: 40px;
-  border-radius: 20px;
-  border: none;
-  padding: 15px;
-}
+
 #subject{
-  width: 600px;
+  width: 100%;
   height: 40px;
   border-radius: 20px;
   border: none;
   padding: 15px;
 }
 #email{
-  width: 600px;
+  width: 100%;
   height: 115px;
   border-radius: 20px;
   border: none;
@@ -247,19 +225,36 @@ padding-top: 15px;
   display: table;
   clear: both;
 }
+@media screen and (max-width: 600px) {
+  .address-column {
+    width: 100%;
+  }
+}
 /* Create two unequal columns that floats next to each other */
 .address-column {
   float: left;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 200px; /* Should be removed. Only for demonstration */
+  padding: 0;
+  margin: 0;
 }
 
 .left {
-  width: 25%;
+  width: 30%;
+}
+.left p{
+  color: white;
+  font-family: poppins;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 5px;
+  padding-left: 10px;
+  margin-top: 5px;
+  display:flex;
 }
 
 .right {
-  width: 75%;
+  width: 70%;
 }
 
 /* Clear floats after the columns */
@@ -268,10 +263,16 @@ padding-top: 15px;
   display: table;
   clear: both;
 }
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .address-column {
+    width: 100%;
+  }
+}
 
 .footer{
   background-color:#008037;
-  height: 250px;
+  
   color: white;
   font-family: Poppins;
   padding: 15px;
@@ -284,10 +285,10 @@ padding-top: 15px;
 .footer-column {
   float: left;
   width: 33.33%;
+  padding: 10px;
 }
 .footer-newsletter {
-  float: right;
-  padding-right: 50px;
+  padding: 5px;
 }
 /* Clear floats after the columns */
 .row:after {
@@ -300,19 +301,20 @@ padding-top: 15px;
     width: 250px;
     border-radius: 6px;
     border: none;
+    
 }
 ::placeholder{
   font-weight: bold;
   color: #008037;
  
 }
-.copyright{
+.copyright p{
+    color: white;
+    padding: 10px;
     text-align: center;
-    font-weight: bold;
-    font-family: Poppins;
-    padding-top: 10px;
+    font-size: 17px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .footer-column {
     width: 100%;
   }
