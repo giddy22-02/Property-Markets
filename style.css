@@ -290,6 +290,10 @@ padding-top: 15px;
 .footer-newsletter {
   padding: 5px;
 }
+.footer-column button{
+  height: auto;
+  width: 20%;
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
