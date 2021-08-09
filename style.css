@@ -1,10 +1,15 @@
  *{
    box-sizing: border-box;
- }
- *{
    padding: 0px;
    margin: 0px;
+   
  }
+ ::placeholder{
+  font-weight: bold;
+  color: #008037;
+ 
+}
+ 
 .bg-img{
   height: 800px; 
   background: url(images/background.jpg);
@@ -70,6 +75,7 @@
    margin-right: 50px;
    text-align: center;
    border: none;
+   position: absolute;
    
 }
 .button:hover{
@@ -103,121 +109,37 @@ body{
   background-color: white;
   color: #008037;
 }
-.About h2{
- color: #62B1F6;
- font-family: Poppins;
- font-weight: bold;
+/*Main Container*/
+.main-container{
+  background-color: #ccc;
+  height: auto;
+}
+
+/*About Us*/
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: auto;
  
 }
- .About p{
-  color: #4DBD33;
-  font-family: Poppins;
-  font-weight: bold;
-  text-align: left;
-}
-
-.main-container{
-  background-color: rgb(201, 199, 199);
-   
-}
-.About ul{
-  color: #4DBD33;
-  font-weight: bold;
-  font-family: poppins;
-  
-}
-.about-column2 img{
-  border-radius: 20px;
-} 
-
-.Features img{
-  border-radius: 20px;
-}
-.Features ul{
-  color: #4DBD33;
-  font-weight: bold;
-  font-family: poppins;
-  
-}
-.Features h2{
+.column1 h2{
   color: #62B1F6;
   font-family: Poppins;
   font-weight: bold;
-  
- }
-
-* {
-  box-sizing: border-box;
+  padding:5px;
 }
-
-
-/*Contact*/
-.contact-row{
-  background-color:  #a7d4a7;
-}
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 20px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-input[type=submit] {
-  background-color: #62B1F6;
-  color: white;
-  padding: 10px 24px;
-  border-radius: 10px;
-  border: none;
-}
-input[type=submit]:hover {
-  background-color: #f1fcf2;
+.column1 p,ul{
   color: #4DBD33;
+  font-family: Poppins;
+  font-weight: bold;
 }
-
-.contact-row p{
-  color:   #008037;
-}
-.contact-row h2{
-  color:   #62B1F6;
-}
-/* Create two columns that float next to eachother */
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-
-.contact-row img{
-  border-radius: 15px;
-}
-
-#fullname,#Phone{
-  width: auto;
-  height: 40px;
-  border-radius: 20px;
-  border: none;
-  padding: 15px;
-}
-
-#subject{
-  width: 100%;
-  height: 40px;
-  border-radius: 20px;
-  border: none;
-  padding: 15px;
-}
-#email{
-  width: 100%;
-  height: 115px;
-  border-radius: 20px;
-  border: none;
-  padding: 15px;
-}
-#submit{
-float: right;
-padding-top: 15px;
+.column1 img{
+  border-radius:20px;
+  width: 80%;
+  height:auto;
+  
 }
 /* Clear floats after the columns */
 .row:after {
@@ -226,15 +148,118 @@ padding-top: 15px;
   clear: both;
 }
 @media screen and (max-width: 600px) {
-  .address-column {
+  .column1 {
     width: 100%;
   }
 }
+/*Features*/
+ /* Create two equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: auto;
+ 
+  
+}
+.column2 h2{
+  color: #62B1F6;
+  font-family: Poppins;
+  font-weight: bold;
+  padding:5px;
+}
+.column2 ul{
+  color: #4DBD33;
+  font-family: Poppins;
+  font-weight: bold;
+}
+.column2 img{
+  border-radius:20px;
+  width:80%;
+  height:300px;
+  border-radius: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+  }
+}
+
+/*Contact*/
+.contact{
+  background-color:  #a7d4a7;
+ 
+ }
+ /* Create two equal columns that floats next to each other */
+ .column3 {
+   float: left;
+   width: 50%;
+   padding: 10px;
+   
+   
+ }
+ .column3 h2{
+   color: #62B1F6;
+   font-family: Poppins;
+   font-weight: bold;
+   padding:5px;
+ }
+ .column3 p{
+   color: #4DBD33;
+   font-family: Poppins;
+   font-weight: bold;
+ }
+ .column3 img{
+   border-radius:20px;
+   width:60%;
+   height:auto;
+ }
+ /* Clear floats after the columns */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ input[type=text],[type=tel],[type=email] {
+   width: 80%;
+   padding: 18px;
+   border: 1px solid #4DBD33;
+   margin-top: 6px;
+   margin-bottom: 10px;
+   resize: vertical;
+   border-radius:20px
+ }
+ input[type=submit] {
+   background-color: #62B1F6;
+   color: white;
+   padding: 10px 24px;
+   border-radius: 10px;
+   border: none;
+   float:right;
+   margin-right:20%;
+ }
+ input[type=submit]:hover {
+   background-color: #f1fcf2;
+   font-weight:bold;
+   color: #4DBD33;
+ }
+ @media screen and (max-width: 600px) {
+   .column3 {
+     width: 100%;
+   }
+ }
+ /*physical address*/
 /* Create two unequal columns that floats next to each other */
 .address-column {
   float: left;
   padding: 10px;
-  height: 200px; /* Should be removed. Only for demonstration */
+  height: 200px;
   padding: 0;
   margin: 0;
 }
@@ -272,7 +297,6 @@ padding-top: 15px;
 
 .footer{
   background-color:#008037;
-  
   color: white;
   font-family: Poppins;
   padding: 15px;
@@ -281,6 +305,10 @@ padding-top: 15px;
   color: white;
   padding-top: 2px;
 }
+.footer-column h4{
+  color: white;
+  border-bottom: 3px solid white;
+}
 
 .footer-column {
   float: left;
@@ -288,12 +316,10 @@ padding-top: 15px;
   padding: 10px;
 }
 .footer-newsletter {
-  padding: 5px;
+  padding: 2px;
 }
-.footer-column button{
-  height: auto;
-  width: 20%;
-}
+ 
+ 
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -302,20 +328,15 @@ padding-top: 15px;
 }
 #footer-email{
     height: 40px;
-    width: 250px;
+    width: 60%;
     border-radius: 6px;
     border: none;
     
 }
-::placeholder{
-  font-weight: bold;
-  color: #008037;
- 
-}
+
 .copyright p{
     color: white;
-    padding: 10px;
-    text-align: center;
+    position: absolute;
     font-size: 17px;
 }
 @media screen and (max-width: 800px) {
