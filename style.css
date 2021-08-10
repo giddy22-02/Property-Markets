@@ -4,6 +4,11 @@
    margin: 0px;
    
  }
+ body{
+  width:auto;
+  font-family: Poppins;
+ 
+} 
  ::placeholder{
   font-weight: bold;
   color: #008037;
@@ -19,29 +24,26 @@
 /* Style the header */
 .header{
   overflow: hidden;
-  padding: 20px 10px; 
+  padding: 20px 10px;
+   
 }
  /* Style the links inside the navigation bar */
   .header a {
     float: left;
     text-align: center;
     color: #4DBD33;;
-    padding:16px;
+    padding:12px;
     text-decoration: none;
     font-size: 18px;
-    font-family: Poppins;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 25px;
-    margin-top: 20px;
- 
-    
+    margin-top: 5%;
   }
    /* Style the hover links inside the navigation bar */
   .header a:hover{
     color: white;
   }
-  
   
   /* Add an active class to highlight the current page */
   .header a.active {
@@ -66,7 +68,7 @@
   
   .button{
    background-color:#4DBD33;;
-   padding: 10px 24px;
+   padding: 12px 24px;
    font-size: 20px;
    border-radius: 24px;
    font-family: Poppins;
@@ -75,7 +77,9 @@
    margin-right: 50px;
    text-align: center;
    border: none;
-   position: absolute;
+   display: inline;
+  
+   
    
 }
 .button:hover{
@@ -83,10 +87,7 @@
   color: #008037;
 }
 
-body{
-   width:auto;
-  
- } 
+
   
 .button2{
     position: absolute;
@@ -139,6 +140,7 @@ body{
   border-radius:20px;
   width: 80%;
   height:auto;
+  margin-top: 20px;
   
 }
 /* Clear floats after the columns */
@@ -219,13 +221,10 @@ body{
    border-radius:20px;
    width:60%;
    height:auto;
+   margin-top: 20px;
+   
  }
- /* Clear floats after the columns */
- .row:after {
-   content: "";
-   display: table;
-   clear: both;
- }
+ 
  input[type=text],[type=tel],[type=email] {
    width: 80%;
    padding: 18px;
@@ -247,8 +246,15 @@ body{
  input[type=submit]:hover {
    background-color: #f1fcf2;
    font-weight:bold;
-   color: #4DBD33;
+   color:  #62B1F6;
+   text-align: center;
  }
+ /* Clear floats after the columns */
+ .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
  @media screen and (max-width: 600px) {
    .column3 {
      width: 100%;
@@ -269,7 +275,6 @@ body{
 }
 .left p{
   color: white;
-  font-family: poppins;
   font-size: 17px;
   font-weight: bold;
   padding: 5px;
@@ -294,53 +299,86 @@ body{
     width: 100%;
   }
 }
-
+/*Footer*/
 .footer{
   background-color:#008037;
   color: white;
   font-family: Poppins;
   padding: 15px;
+  
+  
+}
+.footer-column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  
+  justify-content: center;
 }
 .footer-column p{
   color: white;
   padding-top: 2px;
 }
-.footer-column h4{
+.footer-column h3{
   color: white;
   border-bottom: 3px solid white;
+  display: inline-block;
+}
+.footer-column h4 {
+  color: white;
 }
 
-.footer-column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
+.subscribe {
+  width: 80%;
+  position: relative;
 }
-.footer-newsletter {
-  padding: 2px;
+
+#subscribe-email {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  outline: none;
+  height: 50px;
+  border-radius: 10px;
+  border:1.5px solid #008037;
 }
- 
- 
+
+#clear {
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  right: 2%;
+  z-index: 2;
+  border: none;
+  top: 6px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  background-color: #4DBD33;
+  transform: translateX(2px);
+  padding:14px 18px;
+}
+.subscribe img{
+ display: inline-block;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-#footer-email{
-    height: 40px;
-    width: 60%;
-    border-radius: 6px;
-    border: none;
-    
-}
 
-.copyright p{
-    color: white;
-    position: absolute;
-    font-size: 17px;
-}
 @media screen and (max-width: 800px) {
   .footer-column {
     width: 100%;
   }
+}
+.copyright {
+  background-color: #008037;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  width: 100%;
 }

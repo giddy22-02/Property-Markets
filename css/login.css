@@ -1,13 +1,21 @@
 body{
     background-color:white;
+    font-family: Poppins;
+    width: 100%;
 }
+
+button:hover {
+  opacity: 0.8;
+}
+
 
 /* Style the header */
 .header{
     overflow: hidden;
     padding: 20px 10px; 
+    height: 10%;
   }
-   /* Style the links inside the navigation bar */
+/* Style the links inside the navigation bar */
     .header a {
       float: left;
       text-align: center;
@@ -16,23 +24,17 @@ body{
       text-decoration: none;
       font-size: 18px;
       font-family: poppins; 
-     font-weight: bold;
+      font-weight: bold;
       text-transform: uppercase;
-      line-height: 25px;
-      border-radius: 4px; 
+      line-height: 25px; 
     }
-     /* Style the hover links inside the navigation bar */
+  
     
-     
-    
-    
-    /* Add an active class to highlight the current page */
-   
     .header-right {
        float: right;
       
     }
-     
+/*Make the navigation responsive*/  
     @media screen and (max-width: 600px) {
       .header a {
         float: none;
@@ -44,31 +46,37 @@ body{
         float: none;
       }
     }
-body {
-font-family: Arial, Helvetica, sans-serif;
-
-}
-
+/*Form container*/
+    .form{
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      position: absolute;
+      width: 100%;
+      height: 50%;
+          
+      }
+/*email and password*/
+.container1 {
+      padding: 16px;
+      
+      
+      
+    }
 
 input[type=email], input[type=password] {
-  width: 100%;
-  padding: 16px 28px;
-  margin: 40px 0;
-  display: flex;
+  width: 60%;
+  padding: 18px 28px;
+  margin: 10px;
   border: 1px solid #008037;
   box-sizing: border-box;
   border-radius:24px;
   height: 50px;
-   
- 
+  position: relative;
 }
 ::placeholder{
 font-weight:bold;
 color:#008037;
-}
-label{
-color:#008037;
-font-weight:bold;
 }
 span.psw {
   float: right;
@@ -78,83 +86,63 @@ span.psw a {
   color:#62B1F6;
   font-weight:bold;
 }
+/*forget and remember me container*/
 .remb{
 padding:12px;
-
+margin:25px;
 }
-
-
+label{
+  color:#008037;
+  font-weight:bold;
+  }
+/*Login button container*/
+.login{
+  display:flex;
+  justify-content:center;
+  padding:20px;
+  }
+  .loginbtn{
+  background-color:#4DBD33;
+  color:White;
+  padding:14px 34px;
+  border-radius:15px; 
+  border:none;
+  }
+/*facebook and google button container*/
+.container2 {
+  padding: 16px;
+  padding-left: 50%;
+  
  
-
-button:hover {
-  opacity: 0.8;
+  
+  
 }
-
-.facebookbtn {
-  width: auto;
+#facebook {
   padding: 14px 24px;
   background-color: #000080;
   color:white;
   border-radius:15px;
   border:none;
-  margin: 3px 10px;
+  margin: 30px;
+ 
+  
+ 
 }
 
-.googlebtn {
-  width: auto;
-  padding: 14px 24px;
+#google {
+  padding: 14px 30px;
   background-color: #f44336;
   color:white;
   border-radius:15px;
   border:none;
-  margin: 3px 10px;
-}
-.login{
-display:flex;
-justify-content:center;
-padding:16px;
-}
-.loginbtn{
-background-color:#4DBD33;
-color:White;
-padding:14px 34px;
-border-radius:15px; 
-border:none;
-}
 
  
-
-.container1 {
-  padding: 16px;
 }
-.container2 {
-  padding: 16px;
-  display:flex;
-  justify-content:center;
-  margin: 16px;
-}
-
-
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+/* Change styles for span and facebook &google button on extra small screens */
+@media screen and (max-width: 600px) {
   span.psw {
      display: block;
      float: none;
   }
   
-}
-.form{
-top: 10%;
-left: 50%;
-transform: translate(-50%, 50%);
-position: absolute;
-width: 100%;
-max-width: 400px;
- 
- 
-
-    
-  
-    
 }
