@@ -7,6 +7,15 @@
     <title>Property Markets</title>
     <link rel="stylesheet" href="./style.css">
    <link rel="javascript" href="./javascript.js">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $("input[type='text'],input[type='email'],input[type='tel'],textarea").val("");
+            });
+
+        });
+    </script>
   
 </head>
 <body>
@@ -72,20 +81,43 @@
  <div class="contact">
   <div class="row">
     <div class="column3">
-    <h2> Contact Us</h2>
-    <p>For any queries or concern please reach to us:</p>
-         <form action="/action_page.php">
-                <label for="fullname"></label>
-                <input type="text" id="fullname" name="fullname" placeholder="Full Name" >
-                <label for="Phone"></label>
-                <input type="tel" id="Phone" name="Phone Number" placeholder="Phone Number">
-                <label for="Subject"></label>
-                <input type="text" id="subject" name="subject" placeholder="Subject">
-                <label for="email"></label>
-                <input type="email" id="email" name="Email" placeholder="Email Address">
-            <br>
-              <input type="submit" value="Submit" id="submit">
-             </form>
+      <div class="wrapper">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>For Any Queries or Concerns, Please reach out to us</p>
+        </div>
+        <div class="form">
+            <div class="top-form">
+                <div class="inner-form">
+                   
+                    <input type="text" placeholder=" Full Name">
+                </div>
+                
+                <div class="inner-form">
+                   
+                    <input type="tel"  placeholder=" Phone Number">
+                </div>
+            </div>
+            
+            <div class="middle-form">
+                <div class="inner-form">
+                   
+                    <input type="email"  placeholder=" Email Address">
+                </div>
+                <div class="inner-form">
+                   
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+            <div class="bottom-form">
+                <div class="inner-form">
+                   
+                    <textarea  placeholder=" Your Message"></textarea>
+                </div>
+            </div>
+            <div class="btn">Send</div>
+        </div>
+    </div>
           
     </div>
     <div class="column3">

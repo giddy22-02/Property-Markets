@@ -1,3 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
 body{
-    background-color: violet;
+    font-family: Poppins;
+    background: aqua;
+}
+.wrapper{
+    width: 100%;
+    max-width: 680px;
+    margin: 100px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    letter-spacing: 1px;
+}
+.form{
+    width: 100%;
+    margin: 25px 0;
+}
+.top-form,
+.middle-form,
+.bottom-form{
+    width: 100%;
+    min-height: 65px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form textarea{
+padding: 15px 5px;
+box-sizing: border-box;
+width: 100%;
+border: 2px solid white;
+border-radius: 15px;
+outline: none;
+transition:all 0.2s ease;
+
+}
+.form input:focus,
+.form input:focus,
+.form input:focus,
+.form textarea:focus{
+border-color: blue;
+/*box-shadow: inset 0 1px 1 px rgba(0, 0, 0,0.0125 ),
+0 0 8px rgba(76, 161, 175,0.5 );*/
+}
+.form.label{
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.top-form .inner-form{
+    width: 45%;
+    float: left;
+    margin-right: 10%;
+}
+.top-form .inner-form:last-child{
+    margin-right: 0;
+}
+.middle-form{
+    clear:both;
+}
+.bottom-form textarea{
+    height: 120px;
+}
+.btn{
+    background: #62B1F6;
+    width: 100px;
+    padding:10px 0;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    color:white;
+    font-weight: bold;
+    float: right;
+    letter-spacing: 5px;
+    cursor:pointer;
+}
+@media screen and (max-width: 600px) {
+    .wrapper{
+        margin: 25px auto 0;
+    }
+    .top-form .inner-form{
+        width: 100%;
+        margin: 5px 0;
+    }
+    
 }
