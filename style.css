@@ -76,7 +76,7 @@
    color: white;
    margin-right: 50px;
    text-align: center;
-   border: none;
+   border: 2px solid white;
    display: inline;
   
    
@@ -102,7 +102,7 @@
     font-family: Poppins;
     font-weight: bold;
     color: white;
-    border: none;
+    border: 2px solid white;
     cursor: pointer;
     text-align: center;
 }
