@@ -7,6 +7,15 @@
     <title>Property Markets</title>
     <link rel="stylesheet" href="./style.css">
    <link rel="javascript" href="./javascript.js">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $("input[type='text'],input[type='email'],input[type='tel'],textarea").val("");
+            });
+
+        });
+    </script>
   
 </head>
 <body>
@@ -27,44 +36,32 @@
 </div>
 </div>
 <div class="main-container">
-  <div class="About">
-    <div style="text-align:left">
-      <h2>About Us</h2>
-    </div>
-    <div class="row">
-      <div class="column">
-        <div class="about-column1">
-          <p>We are a payment aggregation platform that the ease of payments for your rented house.You can make the following payment on our portal</p>
-        <ul>
+<!--About Us-->
+<div class="row">
+  <div class="column1">
+    <h2>About Us</h2>
+    <p>We are a payment aggregation platform that the ease of payments for your rented house.You can make the following payment on our portal</p>
+    <ul>
           <li>Rent</li>
           <li>Electricity</li>
           <li>Water</li>
           <li>Service Charge</li>
         </ul>
-        </div>
-        
-      </div>
-      <div class="column">
-        <div class="about-column2">
-          <img src="./images/About Us.jpg"  width="574px" height="429px" style="width:100%">
-        </div>
-       
-      </div>
-    </div>
   </div>
-  <div class="Features">
-    <div class="row">
-      <div class="column">
-        <div class="features-column1">
-          <img src="./images/Features.jpg" width="597px" height="411px">
-        </div>
+  <div class="column1">
+    <img src="./images/About Us.jpg">
+  </div>
+</div>
+
+<!--Features-->
+<div class="row">
+  <div class="column2">
+     <img src="./images/Features.jpg">
         
-      </div>
-       <div class=" column">
-        <div class="features-column2">
-          <div style="text-align:right">
-            <h2>Features</h2>
-          </div>
+  </div>
+  <div class="column2">
+    <h2>Features</h2>
+          
         <ul>
           <li>Selectable bills</li>
           <li>Issue raising</li>
@@ -76,42 +73,59 @@
           <li>Tenancy History</li>
           <li>Service Charge</li>
         </ul>
-      </div>
-       </div>
-    </div>
-  </div>
+   </div>
+</div>
 </div>
 
  <!--Contact form-->
-    <div class="contact-container">
-      <div class="contact-row">
-        <div class="row">
-          <h2>Contact Us</h2>
-            <p>For any queries or concern please reach to us:</p>
-          <div class="column">
+ <div class="contact">
+  <div class="row">
+    <div class="column3">
+      <div class="wrapper">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>For Any Queries or Concerns, Please reach out to us</p>
+        </div>
+        <div class="form">
+            <div class="top-form">
+                <div class="inner-form">
+                   
+                    <input type="text" placeholder=" Full Name">
+                </div>
+                
+                <div class="inner-form">
+                   
+                    <input type="tel"  placeholder=" Phone Number">
+                </div>
+            </div>
             
-            <form action="/action_page.php">
-              <label for="fullname"></label>
-              <input type="text" id="fullname" name="fullname" placeholder="Full Name" >
-              <label for="Phone"></label>
-              <input type="tel" id="Phone" name="Phone Number" placeholder="Phone Number">
-              <label for="Subject"></label>
-              <input type="text" id="subject" name="subject" placeholder="Subject">
-              <label for="email"></label>
-              <input type="email" id="email" name="Email" placeholder="Email Address">
-          <br>
-            <input type="submit" value="Submit" id="submit">
-           </form>
+            <div class="middle-form">
+                <div class="inner-form">
+                   
+                    <input type="email"  placeholder=" Email Address">
+                </div>
+                <div class="inner-form">
+                   
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+            <div class="bottom-form">
+                <div class="inner-form">
+                   
+                    <textarea  placeholder=" Your Message"></textarea>
+                </div>
+            </div>
+            <div class="btn">Send</div>
         </div>
-        <div class="column">
-          <div class="contact-column2">
-            <img src="./images/contact us.jpg" width="300" height="250">
-          </div>
-        </div>
-      </div> 
-   </div>
-      
     </div>
+          
+    </div>
+    <div class="column3">
+      <img src="./images/contact us.jpg" width="300" height="250">
+     </div>
+  </div>
+  </div>
+  
 
      <!--physical address, Map-->
      <div class="row">
@@ -142,26 +156,23 @@
             <img src="./images/property market logo cropped.png" width="250" height="80">
         </div>
         <div class="footer-column">
-            <h4>ADDED LINKS</h4>
+            <h3>ADDED LINKS</h3>
             <p>Services</p>
             <p>Market</p>
         </div>
         <div class="footer-column">
-          <div class="footer-newsletter">
-            <h5>Subscribe to our weekly Newsletter</h5>
-            <div>
-                <input type="email" placeholder="Email Address" id="footer-email"> 
-                <button type="button"><img src="/images/send.png" alt=""></button>
+            <h4>Subscribe to our weekly Newsletter</h4>
+            <div class="subscribe">
+              <input type="text" placeholder="Email Address" id="subscribe-email">
+              <button id="clear"><img src="./images/send.png" alt="send" height="35px" width="35px"></button>
             </div>
-          </div>
-            
         </div>
       </div>
-      <div class="copyright">
-        <p>2020 Copyright by Property Markets</p>
-   </div>
+      
 </div>
-
+<div class="copyright">
+  <p>2020 Copyright by Property Markets</p>
+</div>
 
 
 

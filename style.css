@@ -1,10 +1,21 @@
  *{
    box-sizing: border-box;
- }
- *{
    padding: 0px;
    margin: 0px;
+   user-select: none;
+   
  }
+ body{
+  width:auto;
+  font-family: Poppins;
+ 
+} 
+ ::placeholder{
+  font-weight: bold;
+  color: #008037;
+ 
+}
+ 
 .bg-img{
   height: 800px; 
   background: url(images/background.jpg);
@@ -14,29 +25,26 @@
 /* Style the header */
 .header{
   overflow: hidden;
-  padding: 20px 10px; 
+  padding: 20px 10px;
+   
 }
  /* Style the links inside the navigation bar */
   .header a {
     float: left;
     text-align: center;
     color: #4DBD33;;
-    padding:16px;
+    padding:12px;
     text-decoration: none;
     font-size: 18px;
-    font-family: Poppins;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 25px;
-    margin-top: 20px;
- 
-    
+    margin-top: 5%;
   }
    /* Style the hover links inside the navigation bar */
   .header a:hover{
     color: white;
   }
-  
   
   /* Add an active class to highlight the current page */
   .header a.active {
@@ -61,7 +69,7 @@
   
   .button{
    background-color:#4DBD33;;
-   padding: 10px 24px;
+   padding: 12px 24px;
    font-size: 20px;
    border-radius: 24px;
    font-family: Poppins;
@@ -69,7 +77,10 @@
    color: white;
    margin-right: 50px;
    text-align: center;
-   border: none;
+   border: 2px solid white;
+   display: inline;
+  
+   
    
 }
 .button:hover{
@@ -77,10 +88,7 @@
   color: #008037;
 }
 
-body{
-   width:auto;
-  
- } 
+
   
 .button2{
     position: absolute;
@@ -95,7 +103,7 @@ body{
     font-family: Poppins;
     font-weight: bold;
     color: white;
-    border: none;
+    border: 2px solid white;
     cursor: pointer;
     text-align: center;
 }
@@ -103,121 +111,38 @@ body{
   background-color: white;
   color: #008037;
 }
-.About h2{
- color: #62B1F6;
- font-family: Poppins;
- font-weight: bold;
+/*Main Container*/
+.main-container{
+  background-color: #ccc;
+  height: auto;
+}
+
+/*About Us*/
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: auto;
  
 }
- .About p{
-  color: #4DBD33;
-  font-family: Poppins;
-  font-weight: bold;
-  text-align: left;
-}
-
-.main-container{
-  background-color: rgb(201, 199, 199);
-   
-}
-.About ul{
-  color: #4DBD33;
-  font-weight: bold;
-  font-family: poppins;
-  
-}
-.about-column2 img{
-  border-radius: 20px;
-} 
-
-.Features img{
-  border-radius: 20px;
-}
-.Features ul{
-  color: #4DBD33;
-  font-weight: bold;
-  font-family: poppins;
-  
-}
-.Features h2{
+.column1 h2{
   color: #62B1F6;
   font-family: Poppins;
   font-weight: bold;
-  
- }
-
-* {
-  box-sizing: border-box;
+  padding:5px;
 }
-
-
-/*Contact*/
-.contact-row{
-  background-color:  #a7d4a7;
-}
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 20px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-input[type=submit] {
-  background-color: #62B1F6;
-  color: white;
-  padding: 10px 24px;
-  border-radius: 10px;
-  border: none;
-}
-input[type=submit]:hover {
-  background-color: #f1fcf2;
+.column1 p,ul{
   color: #4DBD33;
+  font-family: Poppins;
+  font-weight: bold;
 }
-
-.contact-row p{
-  color:   #008037;
-}
-.contact-row h2{
-  color:   #62B1F6;
-}
-/* Create two columns that float next to eachother */
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-
-.contact-row img{
-  border-radius: 15px;
-}
-
-#fullname,#Phone{
-  width: auto;
-  height: 40px;
-  border-radius: 20px;
-  border: none;
-  padding: 15px;
-}
-
-#subject{
-  width: 100%;
-  height: 40px;
-  border-radius: 20px;
-  border: none;
-  padding: 15px;
-}
-#email{
-  width: 100%;
-  height: 115px;
-  border-radius: 20px;
-  border: none;
-  padding: 15px;
-}
-#submit{
-float: right;
-padding-top: 15px;
+.column1 img{
+  border-radius:20px;
+  width: 80%;
+  height:auto;
+  margin-top: 20px;
+  
 }
 /* Clear floats after the columns */
 .row:after {
@@ -226,15 +151,185 @@ padding-top: 15px;
   clear: both;
 }
 @media screen and (max-width: 600px) {
-  .address-column {
+  .column1 {
     width: 100%;
   }
 }
+/*Features*/
+ /* Create two equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: auto;
+ 
+  
+}
+.column2 h2{
+  color: #62B1F6;
+  font-family: Poppins;
+  font-weight: bold;
+  padding:5px;
+}
+.column2 ul{
+  color: #4DBD33;
+  font-family: Poppins;
+  font-weight: bold;
+}
+.column2 img{
+  border-radius:20px;
+  width:80%;
+  height:300px;
+  border-radius: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+  }
+}
+
+/*Contact*/
+.contact{
+  background-color:  #a7d4a7;
+ 
+ }
+ /* Create two equal columns that floats next to each other */
+ .column3 {
+   float: left;
+   width: 50%;
+   padding: 10px;
+   
+   
+ }
+
+.wrapper{
+    width: 100%;
+    max-width: 680px;
+    margin: 10px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.content{
+    text-align:left;
+}
+.content h2{
+    letter-spacing: 1px;
+    color: #62B1F6;
+}
+.content p{
+  letter-spacing: 1px;
+  color:#008037;
+  font-weight: bolder;
+}
+.form{
+    width: 100%;
+    margin: 25px 0;
+}
+.top-form,
+.middle-form,
+.bottom-form{
+    width: 100%;
+    min-height: 60px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form textarea{
+padding: 15px 5px;
+box-sizing: border-box;
+width: 100%;
+border: 2px solid #008037;
+border-radius: 20px;
+outline: none;
+transition:all 0.2s ease;
+
+}
+.form input:focus,
+.form input:focus,
+.form input:focus,
+.form textarea:focus{
+border-color: blue;
+/*box-shadow: inset 0 1px 1 px rgba(0, 0, 0,0.0125 ),
+0 0 8px rgba(76, 161, 175,0.5 );*/
+}
+.form.label{
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.top-form .inner-form{
+    width: 45%;
+    float: left;
+    margin-right: 10%;
+}
+.top-form .inner-form:last-child{
+    margin-right: 0;
+}
+.middle-form{
+    clear:both;
+   
+}
+.middle-form .inner-form{
+  margin: 10px 0;
+}
+
+.bottom-form textarea{
+    height: 120px;
+}
+.btn{
+    background: #62B1F6;
+    width: 100px;
+    padding:10px 0;
+    border-radius: 10px;
+    text-align: center;
+    text-transform:uppercase;
+    color:white;
+    font-weight: bold;
+    float: right;
+    letter-spacing: 5px;
+    cursor:pointer;
+}
+@media screen and (max-width: 600px) {
+    .wrapper{
+        margin: 25px auto 0;
+    }
+    .top-form .inner-form{
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+}
+ /* Clear floats after the columns */
+ .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column3 img{
+  border-radius:20px;
+  width:80%;
+  height:450px auto 0;
+  margin-top: 20px;
+  
+}
+ @media screen and (max-width: 600px) {
+   .column3 {
+     width: 100%;
+   }
+ }
+ /*physical address*/
 /* Create two unequal columns that floats next to each other */
 .address-column {
   float: left;
   padding: 10px;
-  height: 200px; /* Should be removed. Only for demonstration */
+  height: 200px;
   padding: 0;
   margin: 0;
 }
@@ -244,7 +339,6 @@ padding-top: 15px;
 }
 .left p{
   color: white;
-  font-family: poppins;
   font-size: 17px;
   font-weight: bold;
   padding: 5px;
@@ -269,57 +363,86 @@ padding-top: 15px;
     width: 100%;
   }
 }
-
+/*Footer*/
 .footer{
   background-color:#008037;
-  
   color: white;
   font-family: Poppins;
   padding: 15px;
+  
+  
+}
+.footer-column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  
+  justify-content: center;
 }
 .footer-column p{
   color: white;
   padding-top: 2px;
 }
+.footer-column h3{
+  color: white;
+  border-bottom: 3px solid white;
+  display: inline-block;
+}
+.footer-column h4 {
+  color: white;
+}
 
-.footer-column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
+.subscribe {
+  width: 80%;
+  position: relative;
 }
-.footer-newsletter {
-  padding: 5px;
+
+#subscribe-email {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  outline: none;
+  height: 50px;
+  border-radius: 10px;
+  border:1.5px solid #008037;
 }
-.footer-column button{
-  height: auto;
-  width: 20%;
+
+#clear {
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  right: 2%;
+  z-index: 2;
+  border: none;
+  top: 6px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  background-color: #4DBD33;
+  transform: translateX(2px);
+  padding:14px 18px;
 }
+.subscribe img{
+ display: inline-block;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-#footer-email{
-    height: 40px;
-    width: 250px;
-    border-radius: 6px;
-    border: none;
-    
-}
-::placeholder{
-  font-weight: bold;
-  color: #008037;
- 
-}
-.copyright p{
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-size: 17px;
-}
+
 @media screen and (max-width: 800px) {
   .footer-column {
     width: 100%;
   }
+}
+.copyright {
+  background-color: #008037;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  width: 100%;
 }
