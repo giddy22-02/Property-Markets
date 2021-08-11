@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     user-select: none;
+    box-sizing: border-box;
 }
 body{
     font-family: Poppins;
@@ -12,9 +13,10 @@ body{
     color: #008037;
     font-weight: bolder;
 }
+
  
 
-button:hover {
+.btn:hover {
   opacity: 0.8;
 }
 
@@ -76,7 +78,7 @@ button:hover {
 }
 .content p{
     letter-spacing: 1px;
-    color: gray;
+    color:#AFAFAF;
     font-weight: bolder;
     font-size: 16px;
 }
@@ -84,9 +86,8 @@ button:hover {
     width: 100%;
     margin: 10px 0;
 }
-.top-form,
-.middle-form,
-.bottom-form{
+
+.form-container{
     width: 100%;
     min-height: 65px;
     margin: 5px 0;
@@ -106,40 +107,171 @@ transition:all 0.2s ease;
  
 
 }
-.form input:focus,
-.form input:focus,
+
 .form input:focus{
 border-color:#4DBD33;
 /*box-shadow: inset 0 1px 1 px rgba(0, 0, 0,0.0125 ),
 0 0 8px rgba(76, 161, 175,0.5 );*/
 }
  
-.top-form .inner-form{
-    margin: 15px 0;
-}
+
  
-.middle-form{
+.form-container{
     clear:both;
 }
-.middle-form .inner-form{
+.form-container .inner-form{
     margin: 15px 0;
 }
-.bottom-form textarea{
-    height: 120px;
+.remember-me{
+  margin: 15px 5px;
+  color: #008037;
 }
-.btn{
-    background: #62B1F6;
-    width: 100px;
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border:3px solid #008037;
+}
+
+/* When the checkbox is checked, add a green background */
+.container input:checked ~ .checkmark {
+  background-color: #008037;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.signup-btn{
+    background: #4DBD33;
+    width: 28%;
     padding:10px 0;
-    border-radius: 10px;
+    border-radius: 18px;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color:white;
     font-weight: bold;
-    float: right;
-    letter-spacing: 5px;
+    margin-left: 36%;
+    letter-spacing: 1px;
     cursor:pointer;
 }
+.or-line hr{
+ margin-top: 20px;
+ width: 100%;
+ color:#008037;
+ background-color:#008037;
+ height: 5px;
+}
+.or{
+  background-color: white;
+  color: #008037;
+  width:100px;
+  font-weight: 700;
+  margin:-15px auto 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.social-media h5{
+  color: #008037;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.btns{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+.social-media .btn1{
+  background: #3B5998;
+  width: 150px;
+  padding:10px 0;
+  border-radius: 18px;
+  text-align: center;
+  text-transform: capitalize;
+  color:white;
+  font-weight: bold;
+  margin-right: 5%;
+  margin-left: 20%;
+  letter-spacing: 1px;
+  cursor:pointer;
+}
+.social-media .btn2{
+  background: #DE5246;
+  width: 150px;
+  padding:10px 0;
+  border-radius: 18px;
+  text-align: center;
+  text-transform: capitalize;
+  color:white;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-right: 20%;
+  letter-spacing: 1px;
+  cursor:pointer;
+}
+.links{
+  color: #AFAFAF;
+  padding: 10px;
+
+}
+span.psw a {
+  color:#008037;
+  font-weight:bold;
+  margin-right: 2px;
+
+  
+ 
+}
+
 @media screen and (max-width: 600px) {
     .wrapper{
         margin: 25px auto 0;
@@ -149,6 +281,7 @@ border-color:#4DBD33;
         margin: 5px 0;
     }
     
+    
 }
 /*Footer*/
 .footer{
@@ -156,7 +289,7 @@ border-color:#4DBD33;
     color: white;
     font-family: Poppins;
     padding: 15px;
-    
+    padding: 20px;
     
   }
   .footer-column {

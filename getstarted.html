@@ -10,7 +10,7 @@
     <script>
         $(document).ready(function(){
             $(".btn").click(function(){
-                $("input[type='text'],input[type='email'],input[type='tel'],textarea").val("");
+                $("input[type='text'],input[type='email'],input[type='tel'],input[type='password']").val("");
             });
 
         });
@@ -33,19 +33,18 @@
             <p>Welcome to Property Markets. Please join us by providing us with the following information</p>
         </div>
         <div class="form">
-            <div class="top-form">
+           
+            
+            <div class="form-container">
                 <div class="inner-form">
                      
                     <input type="text" placeholder=" Full Name">
                 </div>
-                
                 <div class="inner-form">
                      
                     <input type="tel"  placeholder=" Phone Number">
                 </div>
-            </div>
-            
-            <div class="middle-form">
+
                 <div class="inner-form">
                     
                     <input type="email"  placeholder=" Email Address">
@@ -54,14 +53,43 @@
                      
                     <input type="password" placeholder="Password">
                 </div>
-            </div>
-            <div class="bottom-form">
                 <div class="inner-form">
                     
                     <input type="password" placeholder="Confirm Password">
                 </div>
             </div>
-            <div class="btn">Send</div>
+          
+            <div class="remember">
+                <label class="container"> Remember Me
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="signup-btn">
+                Sign up
+            </div>
+            <div class="or-line">
+                <hr>
+                <p class="or">or</p>
+            </div>
+            <div class="social-media">
+                <h5>Sign Up with:</h5>
+                <div class="btns">
+                    <div class="btn1">Facebook</div>
+                    <div class="btn2">Google</div> 
+                </div>
+                
+            </div>
+            <div class="links">
+                <span class="psw"> <a href="#">CLICK HERE</a>If you a Property Owner</span>
+                <br>
+                <span class="psw"> <a href="./login.html">CLICK HERE</a>If you already have an account</span>
+            </div>
+            
+                
+            
+
+
         </div>
     </div>
 <!--Other links-->
@@ -88,6 +116,5 @@
 <div class="copyright">
   <p>2020 Copyright by Property Markets</p>
 </div>
-
 </body>
 </html>

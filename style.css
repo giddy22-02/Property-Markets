@@ -69,7 +69,7 @@
   
   .button{
    background-color:#4DBD33;;
-   padding: 12px 24px;
+   padding: 10px 24px;
    font-size: 20px;
    border-radius: 24px;
    font-family: Poppins;
@@ -86,6 +86,7 @@
 .button:hover{
   background-color: white;
   color: #008037;
+  border: 2px solid #008037;
 }
 
 
@@ -110,6 +111,7 @@
 .button2:hover{
   background-color: white;
   color: #008037;
+  border: 2px solid #008037;
 }
 /*Main Container*/
 .main-container{
@@ -425,6 +427,31 @@ border-color: blue;
 .subscribe img{
  display: inline-block;
 }
+/*new*/
+.sub{
+  padding: 10px;
+  border-radius: 3px;
+}
+.sub input{
+   
+    width: 70%;
+    border-style: none;
+  
+}
+.sub input[type=subtext]:focus {
+  border: 3px solid #555;
+  border-style: none;
+  background-color: white;
+  outline: none;
+}
+.sub button{
+  width: 20%;
+  border-style: none;
+  padding: 5px;
+  background-color: #008037;
+
+}
+
 
 /* Clear floats after the columns */
 .row:after {
