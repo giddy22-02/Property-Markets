@@ -5,12 +5,62 @@
 }
 body{
     font-family: Poppins;
-    background: aqua;
+    background-color:white;
+    width: 100%;
 }
+::placeholder{
+    color: #008037;
+    font-weight: bolder;
+}
+ 
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+/* Style the header */
+.header{
+    overflow: hidden;
+    padding: 20px 10px; 
+    height: 10%;
+  }
+/* Style the links inside the navigation bar */
+    .header a {
+      float: left;
+      text-align: center;
+      color: #4DBD33;;
+      padding:12px;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: poppins; 
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 25px; 
+    }
+  
+    
+    .header-right {
+       float: right;
+      
+    }
+/*Make the navigation responsive*/  
+    @media screen and (max-width: 600px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .header-right {
+        float: none;
+      }
+    }
+
 .wrapper{
     width: 100%;
     max-width: 680px;
-    margin: 100px auto 0;
+    margin: 10px auto 0;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -19,54 +69,60 @@ body{
 }
 .content h1{
     letter-spacing: 1px;
+    color: #4DBD33;
+    font-weight: bolder;
+    font-size: 26px;
+    padding: 5px;
+}
+.content p{
+    letter-spacing: 1px;
+    color: gray;
+    font-weight: bolder;
+    font-size: 16px;
 }
 .form{
     width: 100%;
-    margin: 25px 0;
+    margin: 10px 0;
 }
 .top-form,
 .middle-form,
 .bottom-form{
     width: 100%;
     min-height: 65px;
-    margin: 10px 0;
+    margin: 5px 0;
     overflow: hidden;
 }
 .form input[type="text"],
 .form input[type="email"],
 .form input[type="tel"],
-.form textarea{
-padding: 15px 5px;
+.form input[type="password"]{
+padding: 15px 10px;
 box-sizing: border-box;
 width: 100%;
-border: 2px solid white;
-border-radius: 15px;
+border: 3px solid #008037;
+border-radius: 25px;
 outline: none;
 transition:all 0.2s ease;
+ 
 
 }
 .form input:focus,
 .form input:focus,
-.form input:focus,
-.form textarea:focus{
-border-color: blue;
+.form input:focus{
+border-color:#4DBD33;
 /*box-shadow: inset 0 1px 1 px rgba(0, 0, 0,0.0125 ),
 0 0 8px rgba(76, 161, 175,0.5 );*/
 }
-.form.label{
-    margin-bottom: 5px;
-    text-transform: capitalize;
-}
+ 
 .top-form .inner-form{
-    width: 45%;
-    float: left;
-    margin-right: 10%;
+    margin: 15px 0;
 }
-.top-form .inner-form:last-child{
-    margin-right: 0;
-}
+ 
 .middle-form{
     clear:both;
+}
+.middle-form .inner-form{
+    margin: 15px 0;
 }
 .bottom-form textarea{
     height: 120px;
@@ -94,3 +150,86 @@ border-color: blue;
     }
     
 }
+/*Footer*/
+.footer{
+    background-color:#008037;
+    color: white;
+    font-family: Poppins;
+    padding: 15px;
+    
+    
+  }
+  .footer-column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    
+    justify-content: center;
+  }
+  .footer-column p{
+    color: white;
+    padding-top: 2px;
+  }
+  .footer-column h3{
+    color: white;
+    border-bottom: 3px solid white;
+    display: inline-block;
+  }
+  .footer-column h4 {
+    color: white;
+  }
+  
+  .subscribe {
+    width: 80%;
+    position: relative;
+  }
+  
+  #subscribe-email {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    outline: none;
+    height: 50px;
+    border-radius: 10px;
+    border:1.5px solid #008037;
+  }
+  
+  #clear {
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    right: 2%;
+    z-index: 2;
+    border: none;
+    top: 6px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    background-color: #4DBD33;
+    transform: translateX(2px);
+    padding:14px 18px;
+  }
+  .subscribe img{
+   display: inline-block;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .footer-column {
+      width: 100%;
+    }
+  }
+  .copyright {
+    background-color: #008037;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    width: 100%;
+  }
