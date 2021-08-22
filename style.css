@@ -156,6 +156,9 @@
   .column1 {
     width: 100%;
   }
+  .column1 img{
+    width: 100%;
+  }
 }
 /*Features*/
  /* Create two equal columns that floats next to each other */
@@ -194,6 +197,9 @@
   .column2 {
     width: 100%;
   }
+  .column2 img{
+    width: 100%;
+  }
 }
 
 /*Contact*/
@@ -205,7 +211,8 @@
  .column3 {
    float: left;
    width: 50%;
-   padding: 10px;
+   padding: 10px; 
+    
    
    
  }
@@ -298,6 +305,23 @@ border-color: blue;
     letter-spacing: 5px;
     cursor:pointer;
 }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Contact us image */
+.column3 img{
+  border-radius:20px;
+  width:90%;
+  height:450px auto 0;
+  margin-top: 50px;
+  
+   
+  
+}
+ 
 @media screen and (max-width: 600px) {
     .wrapper{
         margin: 25px auto 0;
@@ -306,26 +330,16 @@ border-color: blue;
         width: 100%;
         margin: 5px 0;
     }
-    
+    .column3 {
+      width: 100%;
+    }
+    .column3 img{
+      width: 100%;
+      margin-top: 20px;
+    }
+     
 }
- /* Clear floats after the columns */
- .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.column3 img{
-  border-radius:20px;
-  width:80%;
-  height:450px auto 0;
-  margin-top: 20px;
-  
-}
- @media screen and (max-width: 600px) {
-   .column3 {
-     width: 100%;
-   }
- }
+ 
  /*physical address*/
 /* Create two unequal columns that floats next to each other */
 .address-column {
@@ -426,6 +440,7 @@ border-color: blue;
 }
 .subscribe img{
  display: inline-block;
+ 
 }
 /*new*/
 .sub{
@@ -449,6 +464,7 @@ border-color: blue;
   border-style: none;
   padding: 5px;
   background-color: #008037;
+   
 
 }
 

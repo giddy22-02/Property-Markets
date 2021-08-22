@@ -68,6 +68,7 @@ body{
 }
 .content{
     text-align: center;
+    margin: 10px;
 }
 .content h1{
     letter-spacing: 1px;
