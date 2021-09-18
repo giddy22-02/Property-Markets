@@ -21,6 +21,7 @@
   background: url(images/background.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  object-fit: cover;
 }
 /* Style the header */
 .header{
